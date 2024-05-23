@@ -71,10 +71,11 @@
          <TableView prefHeight="374.0" prefWidth="629.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columns>
                <TableColumn fx:id="car_id_col" prefWidth="111.20003813505173" text="Car ID" />
-               <TableColumn fx:id="brand_col" prefWidth="116.7999267578125" text="Brand" />
-               <TableColumn fx:id="model_col" prefWidth="124.80003356933594" text="Model" />
+               <TableColumn fx:id="brand_col" prefWidth="103.199951171875" text="Brand" />
+               <TableColumn fx:id="model_col" prefWidth="121.60003662109375" text="Model" />
                <TableColumn fx:id="year_col" prefWidth="107.199951171875" text="Year" />
-               <TableColumn fx:id="status_col" minWidth="7.20001220703125" prefWidth="178.39999389648438" text="Status" />
+               <TableColumn fx:id="price_col" minWidth="7.20001220703125" prefWidth="98.4000244140625" text="Price" />
+               <TableColumn fx:id="status_col" minWidth="7.20001220703125" prefWidth="95.20003662109366" text="Status" />
             </columns>
          </TableView>
       </children>

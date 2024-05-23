@@ -1,0 +1,84 @@
+.shadow {
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 6, 0, 0, 0);
+}
+.rent_car_container {
+  -fx-background-color: #fff;
+}
+#customer_information {
+  -fx-font-size: 1.3em;
+}
+.customer_input_fields_container FontAwesomeIconView {
+  -fx-fill: #4d869c;
+}
+.customer_input_fields_container {
+  -fx-background-color: #fff;
+  -fx-background-radius: 8px;
+  -fx-font-size: 1em;
+  -fx-font-weight: bold;
+}
+.customer_input_fields_container TextField {
+  -fx-border-color: #4d869c;
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-font-weight: normal;
+  -fx-pref-height: 25;
+  -fx-font-size: 1.2em;
+  -fx-background-color: #fff;
+}
+.comboBox {
+  -fx-border-color: #4d869c;
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-background-color: #fff;
+}
+.datePicker {
+    -fx-border-color: #4d869c;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #fff;
+  }
+#rental_information {
+    -fx-font-size: 1.3em;
+  }
+  .rental_input_fields_container FontAwesomeIconView {
+    -fx-fill: #4d869c;
+  }
+  .rental_input_fields_container {
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+  }
+  .rental_input_fields_container TextField {
+    -fx-border-color: #4d869c;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-weight: normal;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.2em;
+    -fx-background-color: #fff;
+  }
+.total_price_container{
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+}
+#total_price_label{
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+.rent_btn{
+    -fx-spacing: 20;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}
+#cancel_btn{
+    -fx-background-color: rgb(223, 40, 40);
+    -fx-text-fill: #fff;
+}
+#rent_btn{
+    -fx-background-color: #1d98c8(223, 40, 40);
+    -fx-text-fill: #fff;
+}
