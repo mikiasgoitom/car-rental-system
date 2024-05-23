@@ -1,0 +1,12 @@
+.dashboard_container {
+    -fx-background-color: white;
+  }
+.info_headers{
+    -fx-alignment: center;
+}
+.info_headers FontAwesomeIconView{
+    -fx-fill: #4d869c;
+}
+.info_headers_revenue{
+    -fx-alignment: center;
+}
