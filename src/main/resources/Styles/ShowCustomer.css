@@ -1,7 +1,7 @@
-.show_customer_container{
-    -fx-background-color: #eee;
+.show_customer_container {
+  -fx-background-color: #eee;
 }
-#customer_title{
-    -fx-font-size: 2em;
-    -fx-font-weight: bold;
+#customer_title {
+  -fx-font-size: 2em;
+  -fx-font-weight: bold;
 }

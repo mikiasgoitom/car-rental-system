@@ -15,11 +15,13 @@ public class ViewFactory {
     private final StringProperty clientSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane rentCarView;
+    private AnchorPane clientProfileView;
     // Admin view
     private AnchorPane addUsersView;
     private AnchorPane adminDashboardView;
     private AnchorPane manageCarsView;
     private AnchorPane showCustomerView;
+    private AnchorPane adminProfileView;
 
     public ViewFactory() {
         this.clientSelectedMenuItem = new SimpleStringProperty("");
@@ -56,6 +58,19 @@ public class ViewFactory {
             }
         }
         return rentCarView;
+    }
+
+    public AnchorPane getClientProfileView() {
+        Predicate<AnchorPane> condition1 = pane -> (pane == null);
+        if (condition1.test(clientProfileView)) {
+            try {
+                clientProfileView = new FXMLLoader(getClass().getResource("/Fxml/Client/ClientProfile.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Failed to load client profile");
+//                e.printStackTrace();
+            }
+        }
+        return clientProfileView;
     }
 
     public void showClientWindow() {
@@ -115,6 +130,18 @@ public class ViewFactory {
             }
         }
         return showCustomerView;
+    }
+    public AnchorPane getAdminProfileView() {
+        Predicate<AnchorPane> condition1 = pane -> (pane == null);
+        if (condition1.test(adminProfileView)) {
+            try {
+                adminProfileView = new FXMLLoader(getClass().getResource("/Fxml/Admin/AdminProfile.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Failed to load admin profile");
+//                e.printStackTrace();
+            }
+        }
+        return adminProfileView;
     }
     public void showLoginWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));

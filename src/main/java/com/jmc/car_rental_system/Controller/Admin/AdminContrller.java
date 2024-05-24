@@ -20,6 +20,7 @@ public class AdminContrller implements Initializable {
                 case "ManageCars" -> admin_parent.setCenter(Model.getInstance().getViewFactory().getManageCarsView());
                 case "AddUsers" -> admin_parent.setCenter(Model.getInstance().getViewFactory().getAddUsersView());
                 case "ShowCustomer" -> admin_parent.setCenter(Model.getInstance().getViewFactory().getShowCustomerView());
+                case "AdminProfile" -> admin_parent.setCenter(Model.getInstance().getViewFactory().getAdminProfileView());
                 default -> admin_parent.setCenter(Model.getInstance().getViewFactory().getAdminDashboardView());
             }
         });

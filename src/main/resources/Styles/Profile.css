@@ -1,7 +1,7 @@
 .shadow {
   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 6, 0, 0, 0);
 }
-.add_user_container {
+.profile_container {
   -fx-background-color: #eee;
 }
 .comboBox {
@@ -10,19 +10,19 @@
   -fx-background-radius: 5px;
   -fx-background-color: #fff;
 }
-#user_information {
+#profile_information {
   -fx-font-size: 1.3em;
 }
-.user_input_fields_container FontAwesomeIconView {
+.profile_input_fields_container FontAwesomeIconView {
   -fx-fill: #4d869c;
 }
-.user_input_fields_container {
+.profile_input_fields_container {
   -fx-background-color: #fff;
   -fx-background-radius: 0 0 8px 8px;
   -fx-font-size: 1em;
   -fx-font-weight: bold;
 }
-.user_input_fields_container TextField {
+.profile_input_fields_container TextField {
   -fx-border-color: #4d869c;
   -fx-border-radius: 5px;
   -fx-background-radius: 5px;
@@ -31,7 +31,7 @@
   -fx-font-size: 1.2em;
   -fx-background-color: #fff;
 }
-.user_input_fields_container PasswordField {
+.profile_input_fields_container PasswordField {
   -fx-border-color: #4d869c;
   -fx-border-radius: 5px;
   -fx-background-radius: 5px;
@@ -50,7 +50,7 @@
   -fx-background-color: rgb(223, 40, 40);
   -fx-text-fill: #fff;
 }
-#add_user_btn {
+#save_btn {
   -fx-background-color: #1d98c8(223, 40, 40);
   -fx-text-fill: #fff;
 }
