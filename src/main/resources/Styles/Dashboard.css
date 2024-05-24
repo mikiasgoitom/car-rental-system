@@ -1,12 +1,42 @@
 .dashboard_container {
-    -fx-background-color: white;
+  -fx-background-color: #eee;
+}
+.info_headers {
+  -fx-alignment: center;
+}
+.info_headers_container {
+  -fx-spacing: 15;
+  -fx-alignment: center;
+}
+.info_headers FontAwesomeIconView {
+  -fx-fill: #4d869c;
+}
+.info_headers_revenue {
+  -fx-alignment: center;
+}
+/* admin specific  */
+.admin_info_headers_container {
+  -fx-spacing: 15;
+  -fx-alignment: center;
+}
+.admin_dashboard_info {
+  /* -fx-background-color: #eef7ff; */
+  -fx-background-radius: 15px;
+}
+.admin_dashboard_info Label{
+    -fx-font-weight: bold;
   }
-.info_headers{
-    -fx-alignment: center;
+.admin_dashboard_info_item{
+    -fx-font-size: 1.5em;
 }
-.info_headers FontAwesomeIconView{
-    -fx-fill: #4d869c;
+.admin_dashboard_info Text {
+  -fx-font-size: 2em;
+  -fx-font-weight: bold;
 }
-.info_headers_revenue{
-    -fx-alignment: center;
+.admin_info_container {
+  -fx-spacing: 10em;
+  -fx-alignment: center;
+}
+#admin_table {
+  -fx-border-color: #eee;
 }

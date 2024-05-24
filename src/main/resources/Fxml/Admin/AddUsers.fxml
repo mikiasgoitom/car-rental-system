@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane prefHeight="700.0" prefWidth="700.0" styleClass="add_user_container" stylesheets="@../../Styles/AddUser.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.car_rental_system.Controller.Admin.AddUsersController">
+   <AnchorPane layoutX="21.0" layoutY="23.0" prefHeight="602.0" prefWidth="630.0" stylesheets="@../../Styles/AddUser.css">
+      <styleClass>
+         <String fx:value="user_input_fields_container" />
+         <String fx:value="shadow" />
+      </styleClass>
+      <Label fx:id="user_information" layoutX="29.0" layoutY="15.0" text="User Information" />
+      <Label layoutX="29.0" layoutY="50.0" text="Full name: " />
+      <TextField fx:id="full_name" layoutX="103.0" layoutY="45.0" prefHeight="34.0" prefWidth="175.0" promptText="John Lewn Awston" />
+      <Label layoutX="29.0" layoutY="96.0" text="Email: " />
+      <TextField fx:id="email" layoutX="101.0" layoutY="91.0" prefHeight="34.0" prefWidth="175.0" promptText="abc@xyz.com" />
+      <Label layoutX="328.0" layoutY="42.0" text="Gender" />
+      <Label layoutX="24.0" layoutY="143.0" text="Phone No:" />
+      <TextField fx:id="phone_number" layoutX="99.0" layoutY="139.0" prefHeight="30.0" prefWidth="175.0" promptText="0912040070" />
+      <Label layoutX="323.0" layoutY="89.0" text="Address: " />
+      <TextField fx:id="address" layoutX="412.0" layoutY="85.0" prefHeight="34.0" prefWidth="193.0" promptText="Akaki Kality" />
+      <ComboBox fx:id="gender" layoutX="417.0" layoutY="39.0" prefHeight="30.0" prefWidth="194.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
+      <FontAwesomeIconView glyphName="USER" layoutX="205.0" layoutY="35.0" size="25" />
+      <Label layoutX="23.0" layoutY="200.0" text="Passsword: " />
+      <PasswordField fx:id="pwd" layoutX="98.0" layoutY="196.0" prefHeight="30.0" prefWidth="175.0" />
+      <Label layoutX="311.0" layoutY="203.0" prefHeight="18.0" prefWidth="117.0" text="Confirm Passsword: " />
+      <PasswordField fx:id="confirm_pwd" layoutX="440.0" layoutY="196.0" prefHeight="34.0" prefWidth="167.0" />
+      <TableView layoutX="10.0" layoutY="286.0" prefHeight="227.0" prefWidth="614.0">
+         <columns>
+            <TableColumn fx:id="user_id_col" prefWidth="63.19998359680176" text="User ID" />
+            <TableColumn fx:id="full_name_col" prefWidth="127.20000457763672" text="Full name" />
+            <TableColumn fx:id="email_col" prefWidth="116.00006103515625" text="Email" />
+            <TableColumn fx:id="phone_number_col" prefWidth="115.99993896484375" text="Phone no" />
+            <TableColumn fx:id="gender_col" minWidth="7.20001220703125" prefWidth="48.79998779296875" text="Gender" />
+            <TableColumn fx:id="address_col" minWidth="7.20001220703125" prefWidth="142.40005493164062" text="Address" />
+         </columns>
+      </TableView>
+   </AnchorPane>
+   <AnchorPane layoutX="548.0" layoutY="579.0" prefHeight="133.0" prefWidth="134.0" />
+   <HBox layoutX="412.0" layoutY="646.0" prefHeight="34.0" prefWidth="226.0" styleClass="btns" stylesheets="@../../Styles/AddUser.css">
+      <children>
+         <Button fx:id="cancel_btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="74.0" text="Cancel" />
+         <Button fx:id="add_user_btn" mnemonicParsing="false" prefHeight="34.0" prefWidth="118.0" text="Add user" />
+      </children>
+   </HBox>
+</AnchorPane>

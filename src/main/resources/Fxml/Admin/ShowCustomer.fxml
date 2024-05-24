@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" styleClass="show_customer_container" stylesheets="@../../Styles/ShowCustomer.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.car_rental_system.Controller.Admin.ShowCustomer">
+    <Label fx:id="customer_title" layoutX="273.0" layoutY="90.0" text="Customer List" />
+    <ListView fx:id="customer_list" layoutX="48.0" layoutY="207.0" prefHeight="434.0" prefWidth="626.0" />
+    <FontAwesomeIconView glyphName="USER" layoutX="454.0" layoutY="118.0" size="30" />
+</AnchorPane>

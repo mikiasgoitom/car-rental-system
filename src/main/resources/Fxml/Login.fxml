@@ -22,6 +22,6 @@
       <Label text="Password" />
       <PasswordField fx:id="pwd_field" promptText="password" styleClass="input_fields" stylesheets="@../Styles/login.css" />
       <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
-      <Label fx:id="error_label" text="Error" />
+      <Label fx:id="error_label"/>
    </VBox>
 </AnchorPane>

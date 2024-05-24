@@ -12,68 +12,60 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-
 <AnchorPane prefHeight="700.0" prefWidth="700.0" styleClass="rent_car_container" stylesheets="@../../Styles/RentCar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.car_rental_system.Controller.Client.RentCarController">
    <children>
-      <AnchorPane layoutX="11.2" layoutY="7.2" prefHeight="213.0" prefWidth="630.0"
-                  stylesheets="@../../Styles/RentCar.css" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="40.0"
-                  AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="7.0">
+      <AnchorPane layoutX="11.2" layoutY="7.2" prefHeight="213.0" prefWidth="630.0" stylesheets="@../../Styles/RentCar.css" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="7.0">
          <styleClass>
-            <String fx:value="customer_input_fields_container"/>
-            <String fx:value="shadow"/>
+            <String fx:value="customer_input_fields_container" />
+            <String fx:value="shadow" />
          </styleClass>
-         <Label fx:id="customer_information" layoutX="29.0" layoutY="15.0" text="Customer Information"/>
-         <Label layoutX="29.0" layoutY="50.0" text="Full name: "/>
-         <TextField layoutX="104.0" layoutY="45.0" promptText="John Lewn Awston"/>
-         <Label layoutX="29.0" layoutY="96.0" text="Email: "/>
-         <TextField layoutX="104.0" layoutY="92.0" promptText="abc@xyz.com"/>
-         <Label layoutX="329.0" layoutY="50.0" text="NationalID No:"/>
-         <TextField layoutX="426.0" layoutY="45.0" prefHeight="29.0" prefWidth="167.0" promptText="123456789"/>
-         <Label layoutX="329.0" layoutY="96.0" text="Gender"/>
-         <Label layoutX="29.0" layoutY="138.0" text="Phone No:"/>
-         <TextField layoutX="104.0" layoutY="134.0" prefHeight="30.0" prefWidth="175.0" promptText="0912040070"/>
-         <Label layoutX="329.0" layoutY="138.0" text="Address: "/>
-         <TextField layoutX="418.0" layoutY="134.0" promptText="Akaki Kality"/>
-         <ComboBox fx:id="gender" layoutX="418.0" layoutY="93.0" prefHeight="29.0" prefWidth="175.0"
-                   styleClass="comboBox" stylesheets="@../../Styles/RentCar.css"/>
-         <FontAwesomeIconView glyphName="USER" layoutX="205.0" layoutY="35.0" size="25"/>
+         <Label fx:id="customer_information" layoutX="29.0" layoutY="15.0" text="Customer Information" />
+         <Label layoutX="29.0" layoutY="50.0" text="Full name: " />
+         <TextField fx:id="full_name" layoutX="104.0" layoutY="45.0" promptText="John Lewn Awston" />
+         <Label layoutX="29.0" layoutY="96.0" text="Email: " />
+         <TextField fx:id="email" layoutX="104.0" layoutY="92.0" promptText="abc@xyz.com" />
+         <Label layoutX="329.0" layoutY="50.0" text="NationalID No:" />
+         <TextField fx:id="national_id" layoutX="426.0" layoutY="45.0" prefHeight="29.0" prefWidth="167.0" promptText="123456789" />
+         <Label layoutX="329.0" layoutY="96.0" text="Gender" />
+         <Label layoutX="29.0" layoutY="138.0" text="Phone No:" />
+         <TextField fx:id="phone_number" layoutX="104.0" layoutY="134.0" prefHeight="30.0" prefWidth="175.0" promptText="0912040070" />
+         <Label layoutX="329.0" layoutY="138.0" text="Address: " />
+         <TextField fx:id="address" layoutX="418.0" layoutY="134.0" promptText="Akaki Kality" />
+         <ComboBox fx:id="gender" layoutX="418.0" layoutY="93.0" prefHeight="29.0" prefWidth="175.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
+         <FontAwesomeIconView glyphName="USER" layoutX="205.0" layoutY="35.0" size="25" />
       </AnchorPane>
-      <AnchorPane layoutX="20.0" layoutY="227.0" prefHeight="403.0" prefWidth="630.0"
-                  stylesheets="@../../Styles/RentCar.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+      <AnchorPane layoutX="40.0" layoutY="227.0" prefHeight="405.0" prefWidth="620.0" stylesheets="@../../Styles/RentCar.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
          <styleClass>
-            <String fx:value="shadow"/>
-            <String fx:value="rental_input_fields_container"/>
+            <String fx:value="shadow" />
+            <String fx:value="rental_input_fields_container" />
          </styleClass>
-         <Label fx:id="rental_information" layoutX="29.0" layoutY="23.0" text="Rental Information"/>
-         <Label layoutX="29.0" layoutY="56.0" text="Brand: "/>
-         <FontAwesomeIconView glyphName="CAR" layoutX="180.0" layoutY="41.0" size="20"/>
-         <ComboBox fx:id="brand" layoutX="88.0" layoutY="52.0" prefHeight="26.0" prefWidth="175.0" styleClass="comboBox"
-                   stylesheets="@../../Styles/RentCar.css"/>
-         <Label layoutX="29.0" layoutY="101.0" text="Year: "/>
-         <ComboBox fx:id="year" layoutX="89.0" layoutY="97.0" prefHeight="26.0" prefWidth="175.0" styleClass="comboBox"
-                   stylesheets="@../../Styles/RentCar.css"/>
-         <Label layoutX="352.0" layoutY="56.0" text="Model:"/>
-         <ComboBox fx:id="model" layoutX="407.0" layoutY="52.0" prefHeight="26.0" prefWidth="175.0"
-                   styleClass="comboBox" stylesheets="@../../Styles/RentCar.css"/>
-         <Label layoutX="351.0" layoutY="101.0" text="Car ID: "/>
-         <ComboBox fx:id="car_id" layoutX="405.0" layoutY="98.0" prefHeight="26.0" prefWidth="175.0"
-                   styleClass="comboBox" stylesheets="@../../Styles/RentCar.css"/>
-         <Label layoutX="29.0" layoutY="138.0" text="From: "/>
-         <Label layoutX="361.0" layoutY="138.0" text="To: "/>
-         <DatePicker fx:id="from" layoutX="88.0" layoutY="134.0" prefHeight="26.0" prefWidth="175.0"
-                     styleClass="datePicker" stylesheets="@../../Styles/RentCar.css"/>
-         <DatePicker fx:id="to" layoutX="407.0" layoutY="134.0" prefHeight="26.0" prefWidth="175.0"
-                     styleClass="datePicker" stylesheets="@../../Styles/RentCar.css"/>
-         <TableView layoutX="29.0" layoutY="207.0" prefHeight="227.0" prefWidth="560.0" AnchorPane.bottomAnchor="1.0"
-                    AnchorPane.leftAnchor="29.0">
+         <Label fx:id="rental_information" layoutX="29.0" layoutY="23.0" text="Rental Information" />
+         <Label layoutX="29.0" layoutY="56.0" text="Brand: " />
+         <FontAwesomeIconView glyphName="CAR" layoutX="180.0" layoutY="41.0" size="20" />
+         <ComboBox fx:id="brand" layoutX="88.0" layoutY="52.0" prefHeight="27.0" prefWidth="118.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
+         <Label layoutX="29.0" layoutY="101.0" text="Year: " />
+         <ComboBox fx:id="year" layoutX="89.0" layoutY="97.0" prefHeight="27.0" prefWidth="175.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
+         <Label layoutX="244.0" layoutY="57.0" text="Model:" />
+         <ComboBox fx:id="model" layoutX="299.0" layoutY="52.0" prefHeight="27.0" prefWidth="103.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
+         <Label layoutX="351.0" layoutY="101.0" text="Car ID: " />
+         <ComboBox fx:id="car_id" layoutX="405.0" layoutY="98.0" prefHeight="26.0" prefWidth="175.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
+         <Label layoutX="29.0" layoutY="138.0" text="From: " />
+         <Label layoutX="361.0" layoutY="138.0" text="To: " />
+         <DatePicker fx:id="from" layoutX="88.0" layoutY="134.0" prefHeight="26.0" prefWidth="175.0" styleClass="datePicker" stylesheets="@../../Styles/RentCar.css" />
+         <DatePicker fx:id="to" layoutX="407.0" layoutY="134.0" prefHeight="26.0" prefWidth="175.0" styleClass="datePicker" stylesheets="@../../Styles/RentCar.css" />
+         <TableView layoutX="30.0" layoutY="170.0" prefHeight="227.0" prefWidth="560.0" AnchorPane.bottomAnchor="8.400000000000034" AnchorPane.leftAnchor="30.0">
             <columns>
-               <TableColumn fx:id="car_id_col" prefWidth="111.20003813505173" text="Car ID"/>
-               <TableColumn fx:id="brand_col" prefWidth="124.0" text="Brand"/>
-               <TableColumn fx:id="model_col" prefWidth="118.39997863769531" text="Model"/>
-               <TableColumn fx:id="year_col" prefWidth="107.199951171875" text="Year"/>
-               <TableColumn fx:id="status_col" minWidth="7.20001220703125" prefWidth="97.60000610351562" text="Price"/>
+               <TableColumn fx:id="car_id_col" prefWidth="88.79997861385345" text="Car ID" />
+               <TableColumn fx:id="brand_col" prefWidth="100.80005645751953" text="Brand" />
+               <TableColumn fx:id="model_col" prefWidth="90.4000244140625" text="Model" />
+               <TableColumn fx:id="year_col" prefWidth="49.5999755859375" text="Year" />
+               <TableColumn fx:id="seat_col" minWidth="7.20001220703125" prefWidth="49.5999755859375" text="Seat" />
+               <TableColumn fx:id="price_col" minWidth="7.20001220703125" prefWidth="86.40005493164062" text="Price" />
+               <TableColumn fx:id="plate" prefWidth="102.39999389648438" text="Plate" />
             </columns>
          </TableView>
+         <Label layoutX="423.0" layoutY="57.0" text="Seat" />
+         <ComboBox fx:id="seat" layoutX="478.0" layoutY="52.0" prefHeight="27.0" prefWidth="103.0" styleClass="comboBox" stylesheets="@../../Styles/RentCar.css" />
       </AnchorPane>
       <HBox layoutX="20.0" layoutY="644.0" prefHeight="35.0" prefWidth="274.0" styleClass="total_price_container" stylesheets="@../../Styles/RentCar.css">
          <children>
@@ -82,7 +74,7 @@
             <Label text="ETB" />
          </children>
       </HBox>
-      <HBox layoutX="412.0" layoutY="642.0" prefHeight="34.0" prefWidth="226.0" styleClass="rent_btn" stylesheets="@../../Styles/RentCar.css">
+      <HBox layoutX="412.0" layoutY="644.0" prefHeight="34.0" prefWidth="226.0" styleClass="rent_btn" stylesheets="@../../Styles/RentCar.css">
          <children>
             <Button fx:id="cancel_btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="74.0" text="Cancel" />
             <Button fx:id="rent_btn" mnemonicParsing="false" prefHeight="34.0" prefWidth="118.0" text="Rent" />

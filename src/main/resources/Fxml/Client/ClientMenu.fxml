@@ -7,30 +7,30 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/ClientMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.car_rental_system.Controller.Client.ClientMenuController">
-   <AnchorPane prefHeight="600.0" prefWidth="180.0" styleClass="left_container" stylesheets="@../../Styles/ClientMenu.css">
-      <VBox prefHeight="80.0" prefWidth="160.0" styleClass="title_container" stylesheets="@../../Styles/ClientMenu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.car_rental_system.Controller.Client.ClientMenuController">
+   <AnchorPane prefHeight="700.0" prefWidth="180.0" styleClass="left_container" stylesheets="@../../Styles/Menu.css">
+      <VBox prefHeight="80.0" prefWidth="160.0" styleClass="title_container" stylesheets="@../../Styles/Menu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <FontAwesomeIconView glyphName="CAR" size="30" />
          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Car Rental" />
       </VBox>
-      <VBox prefHeight="555.0" prefWidth="180.0" styleClass="menu_container" stylesheets="@../../Styles/ClientMenu.css" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+      <VBox prefHeight="555.0" prefWidth="180.0" styleClass="menu_container" stylesheets="@../../Styles/Menu.css" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
          <Button fx:id="dashboard_btn" mnemonicParsing="false" text="Dashboard">
             <graphic>
                <FontAwesomeIconView glyphName="HOME" size="20" text="" />
             </graphic>
          </Button>
-         <Button fx:id="manage_cars_btn" mnemonicParsing="false" text="Rent car">
+         <Button fx:id="rent_car_btn" mnemonicParsing="false" text="Rent car">
             <graphic>
                <FontAwesomeIconView glyphName="CAR" size="17" text="" />
             </graphic>
          </Button>
          <Line endX="120.0" />
-         <Button fx:id="profile_btn" mnemonicParsing="false" styleClass="alt_menu_btn" stylesheets="@../../Styles/ClientMenu.css" text="Profile">
+         <Button fx:id="profile_btn" mnemonicParsing="false" styleClass="alt_menu_btn" stylesheets="@../../Styles/Menu.css" text="Profile">
             <graphic>
                <FontAwesomeIconView glyphName="USER" size="20" />
             </graphic>
          </Button>
-         <Button fx:id="logout_btn" mnemonicParsing="false" styleClass="alt_menu_btn" stylesheets="@../../Styles/ClientMenu.css" text="Log out">
+         <Button fx:id="logout_btn" mnemonicParsing="false" styleClass="alt_menu_btn" stylesheets="@../../Styles/Menu.css" text="Log out">
             <graphic>
                <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
             </graphic>

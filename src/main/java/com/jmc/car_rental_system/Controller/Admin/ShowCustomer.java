@@ -1,17 +1,13 @@
 package com.jmc.car_rental_system.Controller.Admin;
 
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AdminMenuController implements Initializable {
-    public Button dashboard_btn;
-    public Button manage_cars_btn;
-    public Button add_users_btn;
-    public Button profile_btn;
-    public Button logout_btn;
+public class ShowCustomer implements Initializable {
+    public ListView customer_list;
 
     /**
      * @param url

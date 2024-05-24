@@ -15,7 +15,11 @@ public class ViewFactory {
     private final StringProperty clientSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane rentCarView;
-
+    // Admin view
+    private AnchorPane addUsersView;
+    private AnchorPane adminDashboardView;
+    private AnchorPane manageCarsView;
+    private AnchorPane showCustomerView;
 
     public ViewFactory() {
         this.clientSelectedMenuItem = new SimpleStringProperty("");
@@ -25,7 +29,9 @@ public class ViewFactory {
         return clientSelectedMenuItem;
     }
 
-
+    /*
+     * Client view options
+     * */
     public AnchorPane getDashboardView() {
         Predicate<AnchorPane> condition1 = pane -> (pane == null);
         if (condition1.test(dashboardView)) {
@@ -52,15 +58,66 @@ public class ViewFactory {
         return rentCarView;
     }
 
-    public void showLoginWindow() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
-        createStage(loader);
-    }
-
     public void showClientWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Client/Client.fxml"));
         ClientController clientController = new ClientController();
         loader.setController(clientController);
+        createStage(loader);
+    }
+
+    /*
+     * Admin view options
+     * */
+    public AnchorPane getAdminDashboardView() {
+        Predicate<AnchorPane> condition1 = pane -> (pane == null);
+        if (condition1.test(adminDashboardView)) {
+            try {
+                adminDashboardView = new FXMLLoader(getClass().getResource("/Fxml/Admin/AdminDashboard.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Failed to load admin dashboard");
+//                e.printStackTrace();
+            }
+        }
+        return adminDashboardView;
+    }
+    public AnchorPane getAddUsersView() {
+        Predicate<AnchorPane> condition1 = pane -> (pane == null);
+        if (condition1.test(addUsersView)) {
+            try {
+                addUsersView = new FXMLLoader(getClass().getResource("/Fxml/Admin/AddUsers.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Failed to load admin add user");
+//                e.printStackTrace();
+            }
+        }
+        return addUsersView;
+    }
+    public AnchorPane getManageCarsView() {
+        Predicate<AnchorPane> condition1 = pane -> (pane == null);
+        if (condition1.test(manageCarsView)) {
+            try {
+                manageCarsView = new FXMLLoader(getClass().getResource("/Fxml/Admin/ManageCars.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Failed to load admin manage car");
+//                e.printStackTrace();
+            }
+        }
+        return manageCarsView;
+    }
+    public AnchorPane getShowCustomerView() {
+        Predicate<AnchorPane> condition1 = pane -> (pane == null);
+        if (condition1.test(showCustomerView)) {
+            try {
+                addUsersView = new FXMLLoader(getClass().getResource("/Fxml/Admin/ShowCustomer.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Failed to load admin customer list");
+//                e.printStackTrace();
+            }
+        }
+        return showCustomerView;
+    }
+    public void showLoginWindow() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);
     }
 
