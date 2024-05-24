@@ -13,6 +13,7 @@ import java.util.function.Predicate;
 public class ViewFactory {
     //    Client view
     private final StringProperty clientSelectedMenuItem;
+    private final StringProperty adminSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane rentCarView;
     private AnchorPane clientProfileView;
@@ -25,10 +26,14 @@ public class ViewFactory {
 
     public ViewFactory() {
         this.clientSelectedMenuItem = new SimpleStringProperty("");
+        this.adminSelectedMenuItem = new SimpleStringProperty("");
     }
 
     public StringProperty getClientSelectedMenuItem() {
         return clientSelectedMenuItem;
+    }
+    public StringProperty getAdminSelectedMenuItem() {
+        return adminSelectedMenuItem;
     }
 
     /*
@@ -95,6 +100,7 @@ public class ViewFactory {
         }
         return adminDashboardView;
     }
+
     public AnchorPane getAddUsersView() {
         Predicate<AnchorPane> condition1 = pane -> (pane == null);
         if (condition1.test(addUsersView)) {
@@ -107,6 +113,7 @@ public class ViewFactory {
         }
         return addUsersView;
     }
+
     public AnchorPane getManageCarsView() {
         Predicate<AnchorPane> condition1 = pane -> (pane == null);
         if (condition1.test(manageCarsView)) {
@@ -119,6 +126,7 @@ public class ViewFactory {
         }
         return manageCarsView;
     }
+
     public AnchorPane getShowCustomerView() {
         Predicate<AnchorPane> condition1 = pane -> (pane == null);
         if (condition1.test(showCustomerView)) {
@@ -131,6 +139,7 @@ public class ViewFactory {
         }
         return showCustomerView;
     }
+
     public AnchorPane getAdminProfileView() {
         Predicate<AnchorPane> condition1 = pane -> (pane == null);
         if (condition1.test(adminProfileView)) {
@@ -143,6 +152,7 @@ public class ViewFactory {
         }
         return adminProfileView;
     }
+
     public void showLoginWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);

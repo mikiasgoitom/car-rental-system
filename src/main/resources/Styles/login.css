@@ -39,6 +39,16 @@
   -fx-pref-width: 350;
   -fx-pref-height: 30;
 }
+.comboBox {
+  -fx-border-color: #4d869c;
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-background-color: #fff;
+}
+.comboBox_container{
+  -fx-spacing: 20;
+  -fx-alignment: center_left;
+}
 .login_input_container .button:hover {
   -fx-cursor: hand;
 }

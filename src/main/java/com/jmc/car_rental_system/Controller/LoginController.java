@@ -3,6 +3,7 @@ package com.jmc.car_rental_system.Controller;
 import com.jmc.car_rental_system.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -15,6 +16,7 @@ public class LoginController implements Initializable {
     public TextField pwd_field;
     public Button login_btn;
     public Label error_label;
+    public ComboBox role;
 
     /**
      * @param url
